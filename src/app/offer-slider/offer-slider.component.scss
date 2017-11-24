@@ -1,0 +1,65 @@
+.offers-slider{
+  .slider-item{
+    position: relative;
+    .content{
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      .paragraph{
+      color: #Ae8c6a;
+      font-size: 18px;
+      font-weight: 500;
+
+      }
+      .shop-now{
+        font-size: 13px;
+        text-decoration: underline;
+        color: #a4abae;
+
+      }
+    }
+  }
+}
+// testmonials slider
+.testimonails-slider{
+  padding-bottom: 10px;
+    background-color:#F4F4F4;
+     .testimonails-card{
+       text-align: center;
+       padding: 30px 20px;
+       .user-image{
+        width: 60px;
+        margin: 0 auto 15px;
+        img{
+
+        border-radius: 50%;
+        }
+       }
+       .user-name{
+         margin-top: 0;
+         margin-bottom:5px;
+         font-weight: 500;
+         font-size: 15px;
+         color: #717179;
+         letter-spacing: 0.075em;
+
+       }
+        .user-job-title{
+         margin-top: 0;
+         margin-bottom:20px;
+          font-weight: 400;
+         font-size: 13px;
+         color: #717179;
+         letter-spacing: 0.075em;
+
+
+       }
+       .paragraph{
+         font-size: 14px;
+       }
+     }
+}

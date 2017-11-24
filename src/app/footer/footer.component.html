@@ -1,0 +1,115 @@
+<footer>
+  <div class="container">
+    <div class="store-feature">
+      <div class="row">
+        <div class="col-sm-4 col-xs-12 feature">
+          <h4 class="tilte">FREE SHIPPING & RETURN</h4>
+          <div class="description">Free shipping on all orders over $99</div>
+        </div>
+
+         <div class="col-sm-4 col-xs-12 feature">
+          <h4 class="tilte">MONEY BACK GUARANTEE</h4>
+          <div class="description">100% money back guarantee</div>
+        </div>
+
+
+         <div class="col-sm-4 col-xs-12 feature">
+          <h4 class="tilte">ONLINE SUPPORT 24/7</h4>
+          <div class="description">Highly customer satisfaction</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--start middle footer-->
+    <div class="row">
+      <div class="col-md-3 col-sm-4 col-xs-6 footer-col">
+                  <h4 class="col-title">CONTACT INFORMATION</h4>
+
+        <ul class="footer-list">
+          <li class="list-item">123 Shopo Studio</li>
+          <li class="list-item">SHebin-Elkom, IA 128566</li>
+          <li class="list-item">+123 456 7890</li>
+          <li class="list-item">info@oline.com</li>
+        </ul>
+      </div>
+
+           <div class="col-md-3 col-sm-4 col-xs-6 footer-col">
+                  <h4 class="col-title">Collection </h4>
+
+ <ul class="footer-list">          <li class="list-item"> <a href="#">Fashion</a></li>
+          <li class="list-item"> <a href="#">Electronics</a></li>
+          <li class="list-item"> <a href="#">Home & Garden</a></li>
+          <li class="list-item"> <a href="#">Music</a></li>
+          <li class="list-item"> <a href="#">Sport</a></li>
+    </ul>
+      </div>
+
+                <div class="col-md-3 col-sm-4 col-xs-6 footer-col">
+                  <h4 class="col-title">MY ACCOUNT
+</h4>
+        <ul class="footer-list">
+          <li class="list-item"> <a href="#">My Account
+</a></li>
+          <li class="list-item"> <a href="#">About Us
+
+</a></li>
+          <li class="list-item"> <a href="#">About Us
+</a></li>
+          <li class="list-item"> <a href="#">Checkout
+</a></li>    </ul>
+      </div>
+
+  <div class="clearfix visible-xs"></div>
+ <div class="col-md-3 col-sm-6 col-xs-12 footer-col newsletter-col">
+        <h4 class="col-title">NEWSLETTER</h4>
+        <p class="description">Signup for our newsletter</p>
+
+        <form action="" #userform="ngForm" (ngSubmit)="setSubmit(userform.value)" class="footer-newsletter-form" method="POST" novalidate>
+        <div class="form-input icon-right">
+              <input class="email-input" id="mail" name="mail"
+                autocomplete="false"
+                placeholder="EMAiL Address"
+                required
+                #mail="ngModel"
+                [ngModel] ='user_Email'
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+              <input [disabled]="!userform.form.valid" type="submit" class="submit-btn " value="Go">
+
+
+              </div>
+                <div *ngIf="mail.invalid && (mail.dirty || mail.touched)" class="danger">
+
+                <div [hidden]="!mail.errors.required">
+                  Email Required
+                </div>
+                <div  [hidden]="!mail.errors.pattern">
+                Email is invalid
+            </div>
+            </div>
+
+            </form>
+            <ul class="social-media">
+                <li class="item"><a href=""><span class="fa fa-facebook"></span></a></li>
+                <li class="item"><a href=""><span class="fa fa-twitter"></span></a></li>
+                <li class="item"><a href=""><span class=" fa fa-instagram"></span></a></li>
+
+
+            </ul>
+
+            </div>
+    </div>
+  </div>
+
+  <!--start copyright-->
+<div class="copyright-row">
+  <div class="container">
+    <p class="paragraph">Zi-D-aN © 2017. All Rights Reserved
+</p>
+<div class="supported-payment">
+  <img src="./assets/images/footer/payment.png" alt="supported_payment" draggable="false">
+</div>
+  </div>
+</div>
+</footer>

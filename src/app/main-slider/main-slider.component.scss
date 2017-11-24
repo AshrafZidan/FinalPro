@@ -1,0 +1,63 @@
+.main-slider{
+  .slider-item{
+    .content{
+      position: absolute;
+      top: 30%;
+      left: 8%;
+    }
+    .title{
+      font-size: 26px;
+      font-family:'Oswald';
+      font-weight: 400;
+      margin: 0 0 50px;
+    }
+    .link{
+      color: #7E6F5C;
+      font-weight: 500;
+      font-size: 13px;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+  }
+    .slider-controllers{
+      position: absolute;
+        bottom: 30px;
+        left: 8%;
+    }
+  @media(max-width:991px){
+    .slider-item{
+      .content{
+        top: 20%;
+          left: 5%;
+        .title{
+          margin-bottom: 20px;
+        }
+      }
+      .slider-controllers{
+        bottom: 15px;
+        left: 5%
+      }
+    }
+  }
+
+
+    @media(max-width:500px){
+    .slider-item{
+      .content{
+
+
+        .title{
+          margin-bottom: 15px;
+         font-size: 18px;
+          br{
+          display: none
+        }
+        }
+      }
+
+    }
+  }
+}
+

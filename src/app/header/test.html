@@ -1,0 +1,211 @@
+<header>
+  <div class="container">
+      <!--start logo-->
+      <div class="logo image-ratio">
+      <div class="ratio half-square">
+        <div class="ratio-inner">
+
+      <img class="logo" src="./assets/images/logo.png" alt="logo" draggable="false">
+      </div>
+
+      </div>
+
+        </div>
+        <!--end logo-->
+        <!--start all drowb drobowns -->
+      <div class="mobile-view">
+
+      <div class="currency-dropdown drobdown-select list-holder">
+        <label for="" class="selected-item">
+          <span class="item-text">USD</span>
+          <span class="icon fa fa-sort-down"></span>
+        </label>
+        <ul class="list">
+          <li class="list-item" *ngFor='let curr of currency'>
+            <a href="#">{{curr}}</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="lang-dropdown drobdown-select list-holder">
+         <label for="" class="selected-item">
+          <span class="item-text">Eng</span>
+          <span class="icon fa fa-sort-down"></span>
+        </label>
+        <ul class="list">
+          <li  class="list-item" *ngFor='let lang of languages'>
+            <a href="#">{{lang}}</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <!--end-->
+      <div class="drobdown-menu dropdown-links click-outside">
+          <button type="button"  class="menu-btn toggle-active-parent">
+            <span class="item-text">Links</span>
+
+            <span class="icon fa fa-sort-down"></span>
+            </button>
+
+
+          <ul class="lists">
+            <li *ngFor="let link of links" class="lists-item">
+
+              <a href="#">
+
+                {{link}}
+
+                </a>
+            </li>
+
+          </ul>
+      </div>
+
+      </div>
+
+
+      <!--start side right-->
+
+      <div class="right-side pull-right">
+
+      <a href="#" class="signin-btn">SIGN IN</a>
+
+
+        <!--start chart contnet-->
+      <div class="cart">
+
+        <a href="#">
+            <span class="cart-count">2</span>
+          <span class="icon fa fa-shopping-cart">
+
+          </span>
+        </a>
+
+        <div class="cart-content">
+          <!--<p class="no-content text-center pargraphe">
+            You Have No Items In Cart
+          </p>-->
+          <div class="cart-items">
+          <ul class="items-list">
+            <li  class="item act-table">
+              <div class="act-table-cell item-img-cell image-ratio verticla-top">
+                <div class="ratio">
+                <a href="#" class="ratio-inner cart-item">
+
+              <img src="assets/images/cart/img-1.jpg" alt="item" draggable="false" class="item-img">
+                </a>
+                </div>
+              </div>
+
+              <div class="act-table-cell item-content-cell verticla-top">
+                <h4 class="item-title">
+                  <a href="#">BASKET</a>
+                </h4>
+                <p class="pargraphe">
+                  <span class="item-count"> 1 * </span>
+                  <span class="item-price">30$</span>
+              </p>
+              <button type="button" class="close-btn">
+                <span class="icon fa fa-times x"></span>
+              </button>
+              </div>
+
+
+            </li>
+
+
+            <li class="item  act-table">
+              <div class="act-table-cell item-img-cell image-ratio verticla-top">
+                <div class="ratio">
+                <a href="#" class="ratio-inner cart-item">
+
+              <img src="assets/images/cart/img-1.jpg" alt="item" draggable="false" class="item-img">
+                </a>
+                </div>
+              </div>
+              <div class="act-table-cell item-content-cell verticla-top">
+                <h4 class="item-title">
+                  <a href="#">BASKET</a>
+                </h4>
+                <p class="pargraphe">
+                  <span class="item-count"> 1 * </span>
+                  <span class="item-price">30$</span>
+              </p>
+              <button type="button" class="close-btn">
+                <span class="icon fa fa-times x"></span>
+              </button>
+              </div>
+
+
+            </li>
+
+          </ul>
+          <div class="cart-footer">
+            <div class="cart-total">
+               <p >
+                 TOTAL ||
+                 <span class="black"> $60.00 </span>
+               </p>
+            </div>
+            <div class="cart-actions">
+              <div class="row no-margin">
+                <div class="col-xs-6 actions no-padding">
+
+                <a href="#" class="btn">
+                View Cart</a>
+                </div>
+
+                 <div class="col-xs-6 actions no-padding ">
+                  <a href="#" class="btn">
+                    Check Out
+                  </a>
+
+                 </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          </div>
+        </div>
+      </div>
+        <!--end cart content-->
+
+        <!--start other links-->
+      <div class="other-links  list-holder">
+        <span class="fa fa-bars icon">
+          <ul class="list">
+
+            <li class="list-item"><a href="">SignUp</a> </li>
+            <li class="list-item"><a href="">Profile</a> </li>
+
+            <li class="list-item"><a href="">Setting</a></li>
+          </ul>
+        </span>
+      </div>
+      <!--end other links-->
+
+
+      </div>
+      <!--end right side-->
+
+        <!--start search -->
+        <div class="search click-outside">
+         <button type="button" class="toggle-search  toggle-active-parent"><span class="fa fa-search"></span></button>
+        <form class="search-form">
+          <input type="text" placeholder="Search" name="search">
+          <button type="submit" class="submit-btn"><span class="fa fa-search"></span></button>
+        </form>
+        </div>
+        <!--end search-->
+  </div>
+  <!--end container -->
+
+
+
+
+
+</header>

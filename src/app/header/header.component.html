@@ -1,0 +1,97 @@
+<header>
+  <div class="container">
+    <div class="logo image-ratio">
+      <div class="ratio half-square"></div>
+      <div class="ratio-inner"><img src="assets/images/logo.png" alt="Logo" draggable="false"/></div>
+    </div>
+    <div class="mobile-view">
+      <div class="list-holder dropdown-select currency-dropdown">
+        <label class="selected-item"><span class="item-text">USD</span><span class="icon fa fa-sort-down"></span></label>
+        <ul class="list">
+           <li class="list-item" *ngFor='let curr of currency'>
+            <a href="#">{{curr}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="list-holder dropdown-select lang-dropdown">
+        <label class="selected-item"><span class="item-text">ENG</span><span class="icon fa fa-sort-down"></span></label>
+        <ul class="list">
+           <li  class="list-item" *ngFor='let lang of languages'>
+            <a href="#">{{lang}}</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="dropdown-menu dropdown-links click-outside">
+        <button type="button" class="menu-btn toggle-active-parent"><span class="btn-text">LINKS</span><span class="icon fa fa-sort-down"></span></button>
+        <ul class="list">
+
+ <li *ngFor="let link of links" class="lists-item">
+
+              <a href="#">
+
+                {{link}}
+
+                </a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="right-side pull-right">   <a href="#" class="signin-btn">SIGN IN</a>
+      <div class="cart"><a href="#" class="cart-icon"><span class="cart-count">0</span><span class="fa fa-shopping-cart"></span></a>
+        <div class="cart-content">
+          <div class="cart-items">
+            <ul class="items-list">
+              <li class="item act-table">
+                <div class="item-img-cell image-ratio act-table-cell vertical-top">
+                  <div class="ratio"></div><a href="#" class="ratio-inner cart-item"><img src="assets/images/cart/img-1.jpg" alt="item" draggable="false" class="item-img"/></a>
+                </div>
+                <div class="item-content-cell act-table-cell vertical-top">
+                  <h4 class="item-title"><a href="#">BASKET</a></h4>
+                  <p class="paragraph"><span class="item-count">1</span><span class="x">x</span><span class="item-price">$10.00</span></p>
+                  <button type="button" class="close-btn"><span class="icon fa fa-times"></span></button>
+                </div>
+              </li>
+              <li class="item act-table">
+                <div class="item-img-cell image-ratio act-table-cell vertical-top">
+                  <div class="ratio"></div><a href="#" class="ratio-inner cart-item"><img src="assets/images/cart/img-1.jpg" alt="item" draggable="false" class="item-img"/></a>
+                </div>
+                <div class="item-content-cell act-table-cell vertical-top">
+                  <h4 class="item-title"><a href="#">BASKET</a></h4>
+                  <p class="paragraph"><span class="item-count">1</span><span class="x">x</span><span class="item-price">$10.00</span></p>
+                  <button type="button" class="close-btn"><span class="icon fa fa-times"></span></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="cart-fotter">
+            <p class="paragraph cart-total">TOTAL : <span class="black">$60.00</span></p>
+            <div class="cart-actions">
+              <div class="row no-margin">
+                <div class="action col-xs-6 no-padding"><a href="#" class="btn">View Cart</a></div>
+                <div class="action col-xs-6 no-padding"><a href="#" class="btn">Checkout</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="list-holder other-links"><span class="icon fa fa-bars"></span>
+        <ul class="list">
+                 <li class="list-item"><a href="">SignUp</a> </li>
+            <li class="list-item"><a href="">Profile</a> </li>
+
+            <li class="list-item"><a href="">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="search click-outside">
+      <button type="button" class="toggle-search toggle-active-parent"><span class="icon fa fa-search"></span></button>
+      <form class="search-form">
+        <input type="text" placeholder="SEARCH"/>
+        <button type="submit" class="submit-btn"><span class="icon fa fa-search"></span></button>
+      </form>
+    </div>
+    <button type="button" class="category-sidebar-btn pull-right click-outside-btn icon fa fa-bars"></button>
+  </div>
+</header>

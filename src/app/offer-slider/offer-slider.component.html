@@ -1,0 +1,97 @@
+      <div class="section">
+      <div class="section-body">
+           <div class="offers-slider slider">
+      <div class="slider-banner">
+
+        <div *ngFor='let item of createRange(5)' class="slider-item">
+          <div class="slide-img image-ratio">
+            <div class="ratio offer-ratio"></div>
+            <div class="ratio-inner">
+                <div class="content">
+                  <p class="paragraph">|Brwon
+                    <br> Women Shoes</p>
+                  <a class="shop-now" href="#">Shop Now</a>
+                </div>
+              <img src="./assets/images/offers-slider/offer-1.png" alt="slider image" draggable="false"/>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+      </div>
+ <section class="newsletter-section section">
+        <div class="section-header">
+          <h2 class="section-title">NewsLetter</h2>
+          <p class="paragraph section-description">
+            Enter your email address below to subscribe to my newsletter
+          </p>
+          <div class="section-body">
+
+            <form action="" #userform="ngForm" (ngSubmit)="setSubmit(userform.value)" class="news-form" method="POST" novalidate>
+              <div class="form-input icon-right">
+              <input id="mail" name="mail"
+                autocomplete="false"
+                placeholder="EMAiL Address"
+                required
+                #mail="ngModel"
+                [ngModel] ='user_Email'
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+              <span class="fa fa-envelope icon"></span>
+
+              <div *ngIf="mail.invalid && (mail.dirty || mail.touched)" class="danger">
+
+                <div [hidden]="!mail.errors.required">
+                  Email Required
+                </div>
+                <div  [hidden]="!mail.errors.pattern">
+                Email is invalid
+            </div>
+            </div>
+
+              </div>
+               <div class="form-input">
+
+              <input [disabled]="!userform.form.valid" type="submit" class="submit-btn line" value="Subscribe Now">
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+</section>
+
+ <!--start testemonials section-->
+ <div class="section testimonails-section">
+  <div class="section-body">
+    <div class="slider-plugin testimonails-slider">
+      <div class="slider-banner">
+        <div *ngFor='let item of createRange(3)' class="slider-item">
+          <div class="testimonails-card">
+            <div class="user-image">
+              <div class="image-ratio">
+                <div class="ratio">
+                  <div class="ratio-inner">
+                    <img src="./assets/images/testimonials/img-1.jpg" alt="user-image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h4 class="user-name">
+                Ashraf Zidan
+            </h4>
+            <h6 class="user-job-title">|Ceo &amp; Founder</h6>
+            <p class="paragraph">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </div>

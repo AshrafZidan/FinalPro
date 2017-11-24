@@ -1,0 +1,217 @@
+<div class="section">
+<div class="row">
+    <div class="product-box col-md-5 col-xs-12">
+        <div class="product-image-list">
+          <!--start main prodcut-->
+        <div class="zoom-avilable">
+         <div class="image-ratio">
+              <div class="ratio single-image">
+
+              </div>
+              <div class="ratio-inner">
+
+            <img  [id]="single_item.id"  [name]="single_item.name" class="img-responsive main-product" src="./assets/images/products/main-img.jpg"
+
+            data-zoom-image="assets/images/products/main-img.jpg"  alt="product" draggable="false">
+            </div>
+
+          </div>
+        </div>
+      <!--end zoom zoom-avilable-->
+
+            <!--add more images for product-->
+       <div id="gallary" class="more-slides">
+
+              <div class="small-single image-ratio">
+              <div class="ratio single-image">
+              </div>
+
+                <div class="ratio-inner">
+
+                   <a href="#" data-image="./assets/images/products/main-img.jpg" data-zoom-image="./assets/images/products/main-img.jpg">
+                  <img  id="img_01" class="img-responsive" src="./assets/images/products/main-img.jpg" alt="small-photo" />
+
+                   </a>
+
+                </div>
+             </div>
+
+            <div class="small-single image-ratio">
+              <div class="ratio single-image">
+              </div>
+              <div class="ratio-inner">
+
+            <a href="#" data-image="/assets/images/products/فرحه_عبحميد.jpg" data-zoom-image="/assets/images/products/فرحه_عبحميد.jpg">
+                  <img  id="img_02" class="img-responsive" src="/assets/images/products/فرحه_عبحميد.jpg" alt="small-photo" />
+
+                   </a>
+
+            </div>
+          </div>
+
+
+            </div>
+
+              </div>
+
+      </div> <!-- product imaes list -->
+
+    <!--end product images box-->
+
+     <div class="col-md-7 col-xs-12">
+       <div class="section">
+          <h2 class="section-title">
+            <a href="#">Basket</a> </h2>
+        </div>
+        <div class="section-body">
+          <div class="price-box">
+            <div class="price-detail">$10.00</div>
+          <div class="reviews">
+
+            <input type="radio" name="star" id="star-5" value="star-5">
+            <label for="star-5">
+            <i class="fa fa-star icon-s"></i>
+
+            </label>
+              <input type="radio" name="star" id="star-4" value="star-4">
+            <label for="star-4">
+              <i class="fa fa-star icon-s"></i>
+
+            </label>
+              <input type="radio" name="star" id="star-3" value="star-3">
+            <label for="star-3">
+              <i class="fa fa-star icon-s"></i>
+
+            </label>
+              <input type="radio" name="star" id="star-2" value="star-2">
+            <label for="star-2">
+              <i class="fa fa-star icon-s"></i>
+
+            </label>
+              <input type="radio" name="star" id="star-1" value="star-1">
+            <label for="star-1">
+              <i class="fa fa-star icon-s"></i>
+
+            </label>
+
+
+          </div>
+          </div>
+          <div class="description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+          </div>
+          <h4 class="Avilability">AVAILABILITY: <span> 95 In Stock </span> </h4>
+        </div>
+        <div class="product-option">
+          <div class="table-row">
+
+          <input id="qty" type="number" name="quantity" value="{{finalresult}}" min="1" >
+          <div class="plus-minus">
+            <div class="plus" (click)="plus()">
+              <i class="fa fa-plus"></i>
+            </div>
+
+            <div class="minus" (click)="minus()">
+              <i class="fa fa-minus"></i>
+            </div>
+          </div>
+          <div>
+
+          <button type="submit" class="btn submit">add to bag</button>
+          </div>
+          </div>
+
+        </div>
+    </div>
+    <!--end product info-->
+</div> <!--end row-->
+
+<!--start produvt info-->
+<div class="product-descreption">
+  <div class="product-tabs">
+
+    <ul class= "tabs" id="product-tabs" role="tablist">
+
+      <li class="tab first">
+        <a  role="tab" aria-controls="content-1" id="#content-1" aria-selected="true">  MORE INFORMATION </a>
+         </li>
+      <li class="tab" >
+        <a aria-controls="content-2" id="#content-2" role="tab">REVIEWS</a>
+        </li>
+
+
+    </ul>
+    <div class="tab-content first" id="content-1" role="tabpanel" aria-hidden="false">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </div>
+    <div class="tab-content" id="content-2" role="tabpanel" aria-hidden="true">
+    <h3 class="title">CUSTOMER REVIEWS</h3>
+    <p class="description" id="showForm">Based on 1 review <a>Write a Review</a> </p>
+    <div>
+         <h4 class="customer">Ashraf Zidan</h4>
+    <p class="comment">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+    </div>
+
+
+    <!--start usercomment form-->
+    <form id="usercommentform" class="usercomment" action="" method="POST" novalidate #usercomment="ngForm">
+        <h3>Write Your Comment</h3>
+      <input class="form-control" placeholder="Your Name" id="username" name="username" type="text"
+       #username="ngModel" [ngModel] ='user.username'
+        required minlength="3">
+
+       <div *ngIf="username.invalid && username.dirty" class="alert alert-danger">
+           <div [hidden]="!username.errors.required">
+                  UserName Required
+          </div>
+    <div  [hidden]="!username.errors.minlength">
+      At Least 3 Charchter
+       </div>
+       </div>
+
+    <input class="form-control" id="mail" type="email" name="mail" id="mail"
+    placeholder="Example me@gmail.com"
+    autofocus autocomplete="false"
+    required
+    #mail="ngModel"
+    [ngModel] ='user.Email'
+    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+
+    />
+    <div *ngIf="mail.invalid && mail.dirty" class="alert alert-danger">
+
+                <div [hidden]="!mail.errors.required">
+                  Email Required
+                </div>
+                <div  [hidden]="!mail.errors.pattern">
+                Email is invalid
+            </div>
+            </div>
+    <!--end Email-->
+    <textarea name="userComment" rows="10" id="userComment"  placeholder="Write Your Comment Here ..." #usercomment="ngModel"
+     [ngModel]='user.comment' required maxlength="300">
+
+    </textarea>
+    <div *ngIf="usercomment.invalid && usercomment.dirty" class="alert alert-danger">
+
+                <div [hidden]="!usercomment.errors.required">
+                 Please Write Your Comment ..
+                </div>
+                <div  [hidden]="!usercomment.errors.maxlength">
+                Max length is 300 Charter only
+            </div>
+            </div>
+    <!--end Comment-->
+    <button id="submit" class="btn  btn-submit" [disabled]="!usercomment.form.valid" type="submit">Submit</button>
+
+    </form>
+
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+

@@ -1,0 +1,57 @@
+.featured-products{
+  margin: 0 -10px;
+  position: relative;
+  .slider-item{
+  padding: 0 10px;
+  }
+
+  .slider-controllers{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+  .card-image{
+    .main-image{
+      position: relative;
+      z-index: 1;
+      transition: opacity 0.4s;
+
+    }&:hover{
+      // position: absolute;
+      // top:0;
+      // left: 0;
+      // right: 0;
+      // bottom: 0;
+      // width: 100%;
+      z-index: 0;
+      transform: scaleX(-1);
+    // }&:hover{
+    //   .main-image{
+    //     opacity: 0;
+
+    //   }
+    }
+  }
+  .card-content{
+    .card-title{
+      font-size: 14px;
+      color: #061a23;
+      font-weight: 500;
+      margin-bottom: 6px;
+
+    }
+    .rate{
+      color: #061a23;
+
+    }
+    .price{
+      font-size: 14px;
+      font-weight: 500;
+      color: #061a23;
+      margin-top: 5px;
+    }
+  }
+.section-title{
+  margin-left: 5px
+}
+}

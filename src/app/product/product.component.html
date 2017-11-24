@@ -1,0 +1,49 @@
+<!--start featured slider-->
+<div class="section featured-products">
+    <div class="slider section-header">
+        <div class="section-title">
+          <h2 class="section-title">featured products</h2>
+        </div>
+      <div class="section-body">
+      </div>
+
+       <div class="slider-banner">
+
+        <div *ngFor='let item of createRange(10)' class="slider-item product-card">
+          <div class="card-image">
+            <div class="image-ratio">
+              <div class="ratio cart-item">
+
+              </div>
+                <div class="ratio-inner">
+
+            <img class="main-image" src="assets/images/products/img-1.jpg" alt="product" draggable="false">
+            <!--<img class="hover-effect" src="assets/images/products/img-1.jpg" alt="product" draggable="false">-->
+
+              </div>
+
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"><a href="#">Basket</a></h3>
+            <div class="rate">
+              <span class="fa fa-star-o"></span>
+              <span class="fa fa-star-o"></span>
+              <span class="fa fa-star-o"></span>
+              <span class="fa fa-star-o"></span>
+              <span class="fa fa-star-o"></span>
+
+            </div>
+            <p class="price">$30.00</p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="slider-controllers">
+        <button class="icon prev fa fa-angle-left" type="button"></button>
+        <button class="icon next fa fa-angle-right" type="button"></button>
+      </div>
+</div>
+
+</div>
